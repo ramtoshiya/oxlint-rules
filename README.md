@@ -57,7 +57,7 @@ Extend the base config in `.oxlintrc.json`:
 }
 ```
 
-`base.json` loads the plugin relative to itself, so the repository needs no `jsPlugins` entry of its own. Run `oxlint`; any finding exits with status 1.
+Use the relative path into `node_modules`. oxlint 1.94.0 does not resolve a package name in `extends` (`@ramtoshiya/oxlint-rules/base.json` fails to parse). `base.json` loads the plugin relative to itself, so the repository needs no `jsPlugins` entry of its own. Run `npx oxlint`; any finding exits with status 1.
 
 ### Baseline for an existing repository
 
