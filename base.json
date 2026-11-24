@@ -1,0 +1,7 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "jsPlugins": ["./plugin.js"],
+  "rules": {
+    "ramtoshiya/no-error-to-constant": "error"
+  }
+}
